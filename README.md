@@ -8,7 +8,7 @@ My personal Go learns Repo
 | ⭐⭐⭐⭐⭐ Ref Docs                                                                                     | https://github.com/Mo3et/Go-Chats/issues/1                                |
 | ⭐⭐⭐⭐⭐ Learn Go With Tests                                                                          | https://studygolang.gitbook.io/learn-go-with-tests/                       |
 | ⭐⭐⭐⭐⭐ Go Tours                                                                                     | https://tour.go-zh.org/list                                               |
-| ⭐⭐⭐[Golang Techflow 教程](https://github.com/Mo3et/Monet-Blog/blob/main/content/golang_TechFlow.pdf) | https://github.com/Mo3et/Monet-Blog/blob/main/content/golang_TechFlow.pdf |
+| ⭐⭐⭐[Golang Techflow 教程](https://cdn.staticaly.com/gh/Mo3et/Monet-Blog/main/content/golang_TechFlow.pdf) | https://cdn.staticaly.com/gh/Mo3et/Monet-Blog/main/content/golang_TechFlow.pdf |
 | ⭐⭐⭐Go by Example                                                                                     | https://gobyexample-cn.github.io/                                         |
 | ⭐⭐⭐Practical Go Lessons                                                                              | https://www.practical-go-lessons.com/                                     |
 | ⭐⭐Microsoft Go Tutorial                                                                               | https://docs.microsoft.com/zh-cn/learn/paths/go-first-steps/              |
