@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-// 使用包装函数
+// 使用包装函数 返回两个变量
 func main() {
 
 	_, a := num(1, 2)
@@ -30,3 +30,5 @@ func prn1(_, b int) {
 	prn(b)
 
 }
+
+// func 返回值和定义 参考 https://haicoder.net/golang/golang-func-return2.html

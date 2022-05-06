@@ -16,14 +16,14 @@ func main() {
 	var a, b int
 	a, b = b, a //交换两个变量
 
-	// 支持匿名变量（对于不需要的返回值，不用额外定义去接收）
+	// 支持**匿名变量**（对于不需要的返回值，不用额外定义去接收）
 
 	// e.g. 函数返回两个变量，只取其一,可以这样写
-	ret, _ := sample(a, b) // 已经定义变量 ret, _ =sample()
+	ret, _ := sample() // 已经定义变量 ret, _ =sample()
 }
 
-func sample(a, b int) (int, int) {
-	return a, b
+func sample() (string, string) {
+	return "sample1", "sample2"
 }
 
 // func 返回值和定义 参考 https://haicoder.net/golang/golang-func-return2.html
