@@ -25,3 +25,5 @@ func main() {
 func sample(a, b int) (int, int) {
 	return a, b
 }
+
+// func 返回值和定义 参考 https://haicoder.net/golang/golang-func-return2.html

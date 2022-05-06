@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// 使用包装函数
 func main() {
 
 	_, a := num(1, 2)
