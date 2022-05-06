@@ -16,12 +16,12 @@ func main() {
 	var a, b int
 	a, b = b, a //交换两个变量
 
-}
-
-func sample(a, b int) (int int) {
 	// 支持匿名变量（对于不需要的返回值，不用额外定义去接收）
 
 	// e.g. 函数返回两个变量，只取其一,可以这样写
-	ret, _ := sample() // 已经定义变量 ret, _ =sample()
-	return a
+	ret, _ := sample(a, b) // 已经定义变量 ret, _ =sample()
+}
+
+func sample(a, b int) (int, int) {
+	return a, b
 }
