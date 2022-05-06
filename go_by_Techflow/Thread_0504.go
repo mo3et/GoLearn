@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func thread() {
+	const HelloWorld = "Hello World"
 	fmt.Println("I am a thread")
 
 }
