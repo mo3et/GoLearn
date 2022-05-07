@@ -2,6 +2,9 @@ package main
 
 import (
 	"fmt"
+	"strings"
+
+	"golang.org/x/tour/wc"
 )
 
 // map 用来存储key-value的键值对
@@ -29,11 +32,36 @@ func map2() {
 	var m21 = make(map[string]int)
 	//要保证m21经过初始化 否则会报nil的panic
 	m21["acc"] = 4 //key值在map 已存在 会替换掉原本的key(更新) 不存在就是 添加
+	m21["engine"] = 6
 	fmt.Println(m21)
+
+	// 删除元素 用delete  如果不存在就不会发生
+	delete(m21, "acc") //要保证传入的map不为nil 否则会panic
+	fmt.Println(m21)
+
+	//查找元素 直接用[]进行查询
+	// 如果key不再其中 只会返回error 所以用两个变量接收map的结果
+	// 如果没有 error 就会得到nil 判断是否为nil 就知道元素是否存在了
+	if val1, ok1 := m21["engine"]; ok1 {
+		fmt.Println(val1)
+	}
 
 }
 func main() {
 	map1()
 	fmt.Println("map2:")
 	map2()
+	fmt.Println("==============")
+	wc.Test(WordCount)
+}
+
+// 实战 map 例子
+func WordCount(s string) map[string]int {
+	cnt := make(map[string]int)
+	// 用Split方法拆分字符串
+	for _, str := range strings.Split(s) {
+		// 直接++ golang会自动填充
+		cnt[str]++
+	}
+	return cnt
 }
