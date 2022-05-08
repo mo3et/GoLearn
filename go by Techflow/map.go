@@ -2,9 +2,6 @@ package main
 
 import (
 	"fmt"
-	"strings"
-
-	"golang.org/x/tour/wc"
 )
 
 // map 用来存储key-value的键值对
@@ -51,17 +48,17 @@ func main() {
 	map1()
 	fmt.Println("map2:")
 	map2()
-	fmt.Println("==============")
-	wc.Test(WordCount)
+	// fmt.Println("==============")
+	// wc.Test(WordCount)
 }
 
-// 实战 map 例子
-func WordCount(s string) map[string]int {
-	cnt := make(map[string]int)
-	// 用Split方法拆分字符串
-	for _, str := range strings.Split(s) {
-		// 直接++ golang会自动填充
-		cnt[str]++
-	}
-	return cnt
-}
+// // 实战 map 例子
+// func WordCount(s string) map[string]int {
+// 	cnt := make(map[string]int)
+// 	// 用Split方法拆分字符串
+// 	for _, str := range strings.Split(s) {
+// 		// 直接++ golang会自动填充
+// 		cnt[str]++
+// 	}
+// 	return cnt
+// }
