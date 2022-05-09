@@ -5,5 +5,9 @@ import (
 )
 
 func main() {
-	fmt.Println("")
+	a := 4
+	if a, b := 4; b {
+		fmt.Println(a)
+	}
+	fmt.Println(a, b)
 }
