@@ -1,4 +1,4 @@
-module github.com/mo3et/Golean/v2
+module github.com/mo3et/golearn
 go 1.18
 
 
