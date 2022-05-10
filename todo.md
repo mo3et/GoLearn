@@ -5,7 +5,9 @@
 - map 
 - 匿名函数
 - select的使用
-
+- []byte
+- 网络I/O 调用net包下的网络I/O操作是不会阻塞线程的。当发起网络I/O请求时，go运行时会通过操作系统提供的epoll机制注册I/O事件，不会挂起实际干活的线程，只会切换goroutine而已。
+- 
 
 
 # 知识点
@@ -23,3 +25,7 @@
 - Linux环境操作 监控等命令
 
 -[常见面试题](https://zhuanlan.zhihu.com/p/471490292)
+
+# Source
+
+[Go Web Example](https://gowebexamples.com/)
