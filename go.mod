@@ -1,8 +1,9 @@
-module example.com/m/v2
-
+module github.com/mo3et/Golean/v2
 go 1.18
 
+
 require (
+	golang.org/x/tour v0.1.0 // indirect
 	github.com/gin-contrib/sse v0.1.0 // indirect
 	github.com/gin-gonic/gin v1.7.7 // indirect
 	github.com/go-playground/locales v0.14.0 // indirect
