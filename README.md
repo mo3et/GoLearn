@@ -30,4 +30,6 @@ https://learnku.com/go/docs
 
 https://learnku.com/docs/go-database-sql
 
-https://learnku.com/docs/gorm/v2
+ttps://learnku.com/docs/gorm/v2
+
+Docker: https://yeasy.gitbook.io/docker_practice/

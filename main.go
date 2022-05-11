@@ -51,6 +51,6 @@ func main() {
 	go sum(s[:len(s)/2], c)
 	go sum(s[len(s)/2:], c)
 	x, y := <-c, <-c // 从 c 中接收
-
-	fmt.Println(x, y, x+y)
+	xa := 1024 >> 2
+	fmt.Println(x, y, x+y, xa)
 }
