@@ -43,3 +43,14 @@ https://learnku.com/articles/56078
 [Go语言面试题 ！！！](https://geektutu.com/series/#Go%20%E8%AF%AD%E8%A8%80%E9%9D%A2%E8%AF%95%E9%A2%98)
 
 [Context](https://draveness.me/golang/docs/part3-runtime/ch06-concurrency/golang-context/)
+
+-----------
+# 计划
+1. 先TCP/IP HTTP Socket
+2. Go Redis了解怎么写 理解缓存原理
+3. 复习Websockets 原理 
+4. 看看基本数据结构和算法
+5. 复习几个盲点 select、byte slice、interface、struct
+6. 继续研究如何使用Docker Gin
+7. goroutine、channel mod
+8. RESTful API （可与websocket等网络协议一起看）
