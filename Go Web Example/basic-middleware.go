@@ -13,6 +13,22 @@ import {
 
 func logging(f http.HandlerFunc) http.HandlerFunc {
 	return func(w http.ResponseWriter,r *http.Request){
-		
+		log.Println(r.URLPath)
+		f(w,r)
+	}
+
+	func foo (w http.ResponseWriter,r *http.Request){
+		fmt.Fprintln(w,"foo")
+	}
+
+	func bar (w http.ResponseWriter,r *http.Request){
+		fmt.Println(w,"bar")
+	}
+
+	func main() {
+		http.HandleFunc("/", logging(foo))
+		http.HandleFunc("/", logging(bar))
+	
+		http.ListenAndServe(":8080", nil)
 	}
 }

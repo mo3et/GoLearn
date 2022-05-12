@@ -1,4 +1,5 @@
 # 需要加深理解和解决的点
+- select
 - interface
 - struct的定义
 - slice 二维slice
