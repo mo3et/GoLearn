@@ -50,7 +50,7 @@ https://learnku.com/articles/56078
 2. Go Redis了解怎么写 理解缓存原理
 3. 复习Websockets 原理 
 4. 看看基本数据结构和算法
-5. 复习几个盲点 select、byte slice、interface、struct
+5. 复习几个盲点 select、byte slice、interface、struct、Methods！！
 6. 继续研究如何使用Docker Gin
 7. goroutine、channel mod
 8. RESTful API （可与websocket等网络协议一起看）
