@@ -1,11 +1,17 @@
 # Golang 的TCP和UDP实现
 
 TCP和UDP存在于Application layer   
+https://my.oschina.net/u/1399006/blog/683287  
+
 
 ## TCP in Go
 传输稳定， 需要用 net包,关于TCP 协议的支持涉及到 TCPAddr、TCPConn、TCPListener，大多数场景中，并不需要直接调用这些类型  
 ## UDP in Go
 传输快，net包关于UDP协议类型包括UDPConn 和UDPAddr .多数例子是基于这个基础类型直接实现UDP。Go提供了很多抽象接口用于实现UDP网络通信， 最为重要的包是 **PacketConn 包**
+
+______________
+
+## Articles: https://blog.csdn.net/weixin_45477086/article/details/122901328
 
 # Server端常用函数、接口
 
