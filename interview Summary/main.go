@@ -49,6 +49,7 @@ func exam1(num int) {
 }
 func main() {
 	exam1(54)
+	slice2()
 }
 
 //奇偶排序数列 只能用一个slice
