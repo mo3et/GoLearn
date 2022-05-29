@@ -13,6 +13,23 @@ import "fmt"
 // 	fmt.Println(arrs())
 // }
 
+func slice1() {
+	data := []int{1, 2, 3}
+	for _, v := range data {
+		// v*=10 //data中原有元素是不会被修改的
+		data[v] = v * 10
+	}
+	fmt.Println("data :", data)
+}
+
+func slice2() {
+	data2 := []*struct{ num int }{{1}, {2}, {3}}
+	for _, v := range data2 {
+		v.num *= 10 // 直接使用指针更新
+	}
+	fmt.Println(data2[0], data2[1], data2[2])
+}
+
 // TODO
 // 将数字转为2进制，然后计算二进制中的1的个数
 func exam1(num int) {
@@ -31,7 +48,7 @@ func exam1(num int) {
 	fmt.Println("sum", sum)
 }
 func main() {
-	exam1(66)
+	exam1(54)
 }
 
 //奇偶排序数列 只能用一个slice
