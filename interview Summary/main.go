@@ -18,18 +18,20 @@ import "fmt"
 func exam1(num int) {
 	// var num1 int
 	sum := 0
-	fmt.Scanf("%d", &num)
-	for num < 0 {
+	// fmt.Scanf("%d", &num)
+	for num > 0 {
 		if num%2 != 0 {
 			sum += 1
 			// num=num/2
+
 		}
 		num = num / 2
+		fmt.Println(num, sum)
 	}
-	fmt.Println(sum)
+	fmt.Println("sum", sum)
 }
 func main() {
-	exam1(9)
+	exam1(66)
 }
 
 //奇偶排序数列 只能用一个slice
