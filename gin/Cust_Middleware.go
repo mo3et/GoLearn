@@ -1,4 +1,13 @@
-func Logger() gin.HandlerFUnc {
+package main
+
+import (
+	"log"
+	"time"
+
+	"github.com/gin-gonic/gin"
+)
+
+func Logger() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		t := time.Now()
 
