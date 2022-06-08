@@ -15,4 +15,7 @@ func main() {
 	router.Run(":8081")
 }
 
-curl -X POST http://localhost:8080/upload \
+// How to curl
+// curl -X POST http://localhost:8080/upload \
+// -F "file=@/Users/appleboy/test.zip" \
+// -H "Content-Type: nultipart/form-data"
