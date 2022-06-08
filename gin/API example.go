@@ -2,6 +2,7 @@
 package main
 
 import (
+	"fmt"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -66,3 +67,54 @@ func main2() {
 
 	router.Run(":8080")
 }
+
+// Querystring parameters
+func main3() {
+	router := gin.Default()
+
+	// Query string parameters are parsed using the existing underlying request object.
+	// The request responds to a url matching : /welcome?firstname=Jane&lastname=Doe
+	router.GET("/welcome", func(c *gin.Context) {
+		firstname := c.DefaultQuery("firstname", "Guest")
+		lastname := c.Query("lastname") //shortcut for c.Request.URL.Query().Get("lastname")
+
+		c.String(http.StatusOK, "Hello %s %s", firstname, lastname)
+	})
+	router.Run(":8081")
+}
+
+// Multipart / Urlencoded Form
+func main4() {
+	router := gin.Default()
+
+	router.POST("/form_post", func(c *gin.Context) {
+		message := c.PostForm("message")
+		nick := c.DefaultPostForm("nick", "anonymous")
+
+		c.JSON(http.StatusOK, gin.H{
+			"status":  "posted",
+			"message": message,
+			"nick":    nick,
+		})
+	})
+	router.Run(":8081")
+}
+
+// Map as querystring or postform parameters
+
+// POST /post?ids[a]=1234&ids[b]=hello HTTP/1.1
+// Content-Type: application/x-www-form-urlencoded
+//
+// names[first]=thinkerou&names[second]=tianou
+
+func main5() {
+	router := gin.Default()
+	router.POST("/post", func(c *gin.Context) {
+
+		ids := c.QueryMap("ids")
+		names := c.PostFormMap("names")
+
+		fmt.Printf("ids: %v;names: %v", ids, names)
+	})
+	router.Run(":8081")
+} // ids: map[b:hello a:1234]; names: map[second:tianou first:thinkerou]
