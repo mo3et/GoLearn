@@ -1,6 +1,9 @@
+# Action in Redis
+
 Articles:https://www.cnblogs.com/itbsl/p/14198111.html
 
 基本指令
+
 ```Keys():根据正则获取keys
 Type():获取key对应值得类型
 Del():删除缓存项
@@ -26,7 +29,6 @@ DecrBy():按指定步长减少
 Append():追加
 StrLen():获取长度
 ```
-
 
 列表(list)类型  
 
