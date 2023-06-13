@@ -7,30 +7,33 @@ func vals() (int, int) {
 	return 3, 7
 }
 
-func vals1(a, b int) (int, int) {
+// func vals1(a, b int) (int, int) {
 
-	return a * b, a / b
-}
-func text(a int) int {
-	c := b(int) - a
-	if _, ok := text(c); ok {
-		return 1
-	}
-}
+// 	return a * b, a / b
+// }
+// func text(a int) int {
+// 	c := b(int) - a
+// 	if _, ok := text(c); ok {
+// 		return 1
+// 	}
+// }
 
 func main() {
-	m := make(map[int]int)
 
 	a, b := vals()
 	fmt.Println(a)
 	fmt.Println(b)
 
-	_, error := vals()
-	fmt.Println(error)
+	_, c := vals()
+	fmt.Println(c)
 
-	if _, ok := m[1]; ok {
-		println("ok", a)
-	}
+	// m := make(map[int]int)
+
+	// fmt.Println(error)
+
+	// if _, ok := m[1]; ok {
+	// 	println("ok", a)
+	// }
 	// _,ok:=vals1(6,3);ok{
 	// 	reutrn nil;
 	// }
