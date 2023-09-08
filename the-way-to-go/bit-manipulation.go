@@ -1,3 +1,4 @@
+package thewaytogo
 // 位运算
 // %b 是用于表示位的格式化标识符
 
@@ -78,5 +79,3 @@ const (
 )
 
 flag := Active | Send // ==3
-
-
