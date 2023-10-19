@@ -30,9 +30,10 @@ func recv(c chan int) {
 	ret := <-c
 	fmt.Println("接收成功", ret)
 }
-func main() {
+
+func main1() {
 	ch := make(chan int)
-	go recv(ch) //启用go Routine
+	go recv(ch) // 启用go Routine
 	ch <- 10
 	// num := <-ch
 	// select {

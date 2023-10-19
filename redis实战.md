@@ -4,7 +4,8 @@ Articles:https://www.cnblogs.com/itbsl/p/14198111.html
 
 基本指令
 
-```Keys():根据正则获取keys
+```
+Keys():根据正则获取keys
 Type():获取key对应值得类型
 Del():删除缓存项
 Exists():检测缓存项是否存在
@@ -17,7 +18,8 @@ FlushAll():清空所有数据库
 
 字符串(string)类型
 
-```Set():设置
+```
+Set():设置
 SetEX():设置并指定过期时间
 SetNX():设置并指定过期时间
 Get():获取

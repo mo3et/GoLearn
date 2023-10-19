@@ -17,5 +17,5 @@ type Point1 struct {
 
 func main() {
 	var p1 *Point1 = new(Point1)
-	fmt。Print(p1)
+	fmt.Print(p1)
 }

@@ -20,14 +20,18 @@ func process(conn net.Conn) {
 	for {
 		reader := bufio.NewReader(conn)
 		var buf [128]byte
-		n, err := reader.Read(buf[:]) //读取数据
+		n, err := reader.Read(buf[:]) // 读取数据
 		if err != nil {
 			fmt.Println("read from client  failed, err: ", err)
 			break
 		}
 		recvStr := string(buf[:n])
 		fmt.Println("Data from client:", recvStr)
-		conn.Write([]byte(recvStr)) //发送数据
+		recvDetails := "input is " + recvStr
+		_, err = conn.Write([]byte(recvDetails)) // 发送数据
+		if err != nil {
+			panic(err)
+		}
 	}
 }
 
@@ -38,11 +42,12 @@ func main() {
 		return
 	}
 	for {
-		conn, err := listen.Accept() //建立连接
+		conn, err := listen.Accept() // 建立连接
 		if err != nil {
 			fmt.Println("accept failed, err: ", err)
 			continue
 		}
-		go process(conn) //启动一个gorountine
+		go process(conn) // 启动一个gorountine
+		fmt.Println("server is connecting client.")
 	}
 }
