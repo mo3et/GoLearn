@@ -13,7 +13,7 @@ Bad   开销 资源共享，由于共享更频繁，需要加上锁，避免数�
 // def A():
 // 	print '1'
 // 	print '2'
-// 	print '3'
+// 	print '3'1
 
 // def B():
 // 	print 'x'
@@ -57,4 +57,3 @@ func maingo1() {
 	go func(x, y int) {
 		fmt.Println(x + y)
 	}(3, 4)
-}
